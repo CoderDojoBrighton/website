@@ -1,0 +1,123 @@
+baseURL = "https://www.coderdojobrighton.org.uk/"
+languageCode = "en-gb"
+title = "Coder Dojo Brighton"
+theme = "CoderDojoBrighton2013"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[permalinks]
+  page = "/:slug/"
+
+[params]
+  siteDescription = "A free, fortnightly coding club for young people"
+
+[[params.upcomingSessions]]
+date = "6th Jun 2026"
+time = "10:00am - 12:45pm"
+
+[[params.upcomingSessions]]
+date = "20th Jun 2026"
+time = "10:00am - 12:45pm"
+
+[[params.upcomingSessions]]
+date = "4th Jul 2026"
+time = "10:00am - 12:45pm"
+
+[menu]
+  [[menu.main]]
+    identifier = "learn"
+    name = "Learn to code"
+    pageRef = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 20
+
+  [[menu.main]]
+    name = "Books"
+    pageRef = "/books"
+    parent = "resources"
+    weight = 21
+
+  [[menu.main]]
+    name = "HTML"
+    pageRef = "/html"
+    parent = "resources"
+    weight = 22
+
+  [[menu.main]]
+    name = "Python"
+    pageRef = "/python"
+    parent = "resources"
+    weight = 23
+
+  [[menu.main]]
+    name = "Scratch and Snap"
+    pageRef = "/scratch-snap"
+    parent = "resources"
+    weight = 24
+
+  [[menu.main]]
+    name = "Music with Sonic Pi"
+    pageRef = "/resources/music-with-sonic-pi"
+    parent = "resources"
+    weight = 25
+
+  [[menu.main]]
+    name = "SQL"
+    pageRef = "/sql"
+    parent = "resources"
+    weight = 26
+
+  [[menu.main]]
+    name = "Register to attend"
+    pageRef = "/register-to-attend"
+    weight = 30
+
+  [[menu.main]]
+    name = "Be a Mentor"
+    pageRef = "/info-for-mentors"
+    weight = 40
+
+  [[menu.main]]
+    name = "Find us"
+    pageRef = "/how-to-find-us"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "faqs"
+    name = "FAQs"
+    pageRef = "/info-for-participants"
+    url = "/info-for-participants/"
+    weight = 60
+
+  [[menu.main]]
+    name = "Info for Participants"
+    pageRef = "/info-for-participants"
+    url = "/info-for-participants/"
+    parent = "faqs"
+    weight = 61
+
+  [[menu.main]]
+    name = "Info for Parents"
+    pageRef = "/info-for-parents"
+    url = "/info-for-parents/"
+    parent = "faqs"
+    weight = 62
+
+  [[menu.main]]
+    name = "Info for Mentors"
+    pageRef = "/info-for-mentors"
+    url = "/info-for-mentors/"
+    parent = "faqs"
+    weight = 63
+
+

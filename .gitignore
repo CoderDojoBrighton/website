@@ -1,0 +1,8 @@
+# Hugo build output
+/public/
+/.hugo_build.lock
+
+# Common OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

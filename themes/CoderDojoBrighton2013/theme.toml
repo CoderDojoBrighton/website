@@ -1,0 +1,12 @@
+name = "CoderDojoBrighton2013"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Extracted site theme for CoderDojo Brighton"
+homepage = "https://www.coderdojobrighton.org.uk/"
+tags = ["coderdojo", "legacy", "twentythirteen"]
+features = ["navigation", "sidebar"]
+min_version = "0.136.0"
+
+[author]
+  name = "CoderDojo Brighton"
+  homepage = "https://www.coderdojobrighton.org.uk/"

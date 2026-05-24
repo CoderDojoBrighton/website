@@ -1,0 +1,40 @@
+<div id="tertiary" class="sidebar-container" role="complementary">
+  <div class="sidebar-inner">
+    <div class="widget-area">
+      <aside class="widget EO_Event_List_Widget">
+        <h3 class="widget-title">Upcoming sessions</h3>
+        <ul class="eo-events eo-events-widget">
+          {{ range .Site.Params.upcomingSessions }}
+          <li class="eo-event-future">{{ .date }} {{ .time }}</li>
+          {{ end }}
+        </ul>
+      </aside>
+
+      <aside class="widget widget_block">
+        <div class="sidebar-map-card">
+          <a
+            href="https://www.openstreetmap.org/?mlat=50.82784&mlon=-0.17045#map=17/50.82784/-0.17045"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-link"
+            aria-label="Open map for PLATF9RM Hove Town Hall"
+          >
+            <iframe
+              class="sidebar-map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1735%2C50.8268%2C-0.1682%2C50.8291&layer=mapnik&marker=50.82784%2C-0.17045"
+              loading="lazy"
+            ></iframe>
+            <div class="map-overlay">Click to open map</div>
+          </a>
+
+          <div class="location-details">
+            <strong>Coder Dojo Brighton at PLATF9RM</strong><br>
+            Hove Town Hall<br>
+            Church Rd,<br>
+            Hove BN3 2AF
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>

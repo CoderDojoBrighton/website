@@ -1,0 +1,12 @@
+{{- $root := .root -}}
+{{- $entries := .entries -}}
+<ul{{ with .listId }} id="{{ . }}"{{ end }} class="{{ .listClass }}">
+  {{- range $entries }}
+  <li class="menu-item{{ if .HasChildren }} menu-item-has-children{{ end }}{{ if $root.IsMenuCurrent "main" . }} current-menu-item{{ end }}{{ if $root.HasMenuCurrent "main" . }} current_page_ancestor{{ end }}">
+    <a href="{{ .URL }}"{{ if $root.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{- if .HasChildren }}
+      {{ partial "menu.html" (dict "root" $root "entries" .Children "listClass" "sub-menu") }}
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.siteDescription }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.siteDescription }}">
+  <link rel="stylesheet" href="/themes/twentythirteen/fonts/source-sans-pro-plus-bitter6a62.css?ver=20230328" media="all">
+  <link rel="stylesheet" href="/themes/twentythirteen/genericons/genericons19ce.css?ver=3.0.3" media="all">
+  <link rel="stylesheet" href="/themes/twentythirteen/style7035.css?ver=20240402" media="all">
+  <link rel="stylesheet" href="/themes/twentythirteen/css/blocks7ed6.css?ver=20231016" media="all">
+
+  <style>
+    .site-header {
+      background: url(/themes/twentythirteen/images/site-header.jpg) no-repeat scroll top;
+      background-size: 1600px auto;
+    }
+    @media (max-width: 767px) {
+      .site-header { background-size: 768px auto; }
+    }
+    @media (max-width: 359px) {
+      .site-header { background-size: 360px auto; }
+    }
+    .site-title,
+    .site-description {
+      color: #ffffff;
+    }
+    .map-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 0.4rem 0.2rem;
+    }
+    .sidebar-map-card {
+      width: 100%;
+      max-width: 320px;
+    }
+    .map-link {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .sidebar-map {
+      display: block;
+      width: 100%;
+      height: 200px;
+      border: 0;
+    }
+    .location-details {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .mentor-signup #mc_embed_signup {
+      width: 100%;
+      max-width: 640px;
+    }
+  </style>
+</head>
+<body class="single-author sidebar">
+  <div id="page" class="hfeed site">
+    <header id="masthead" class="site-header">
+      <a class="home-link" href="{{ "/" | relURL }}" rel="home">
+        <h1 class="site-title">{{ .Site.Title }}</h1>
+        <h2 class="site-description">{{ .Site.Params.siteDescription }}</h2>
+      </a>
+
+      <div id="navbar" class="navbar">
+        <nav id="site-navigation" class="navigation main-navigation">
+          <button class="menu-toggle">Menu</button>
+          <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+          <div class="menu-main-container">
+            {{ partial "menu.html" (dict "root" . "entries" .Site.Menus.main "listClass" "nav-menu" "listId" "primary-menu") }}
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="main" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </div>
+
+  <script src="/js/jquery/jquery.minf43b.js?ver=3.7.1"></script>
+  <script src="/themes/twentythirteen/js/functions25ae.js?ver=20230526" defer></script>
+</body>
+</html>
+
