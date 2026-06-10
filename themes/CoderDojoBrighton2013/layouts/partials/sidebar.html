@@ -4,8 +4,14 @@
       <aside class="widget EO_Event_List_Widget">
         <h3 class="widget-title">Upcoming sessions</h3>
         <ul class="eo-events eo-events-widget">
+          {{ $today := time.AsTime (now.Format "2006-01-02") }}
+          {{ $shown := 0 }}
           {{ range .Site.Params.upcomingSessions }}
-          <li class="eo-event-future">{{ .date }} {{ .time }}</li>
+          {{ $sessionDate := time.AsTime .date }}
+          {{ if and (ge $sessionDate $today) (lt $shown 3) }}
+          <li class="eo-event-future">{{ $sessionDate.Format "2 Jan 2006" }} {{ .time }}</li>
+          {{ $shown = add $shown 1 }}
+          {{ end }}
           {{ end }}
         </ul>
       </aside>

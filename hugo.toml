@@ -17,15 +17,15 @@ disableKinds = ["taxonomy", "term", "RSS"]
   siteDescription = "A free, fortnightly coding club for young people"
 
 [[params.upcomingSessions]]
-date = "6th Jun 2026"
+date = "2026-06-20"
 time = "10:00am - 12:45pm"
 
 [[params.upcomingSessions]]
-date = "20th Jun 2026"
+date = "2026-07-04"
 time = "10:00am - 12:45pm"
 
 [[params.upcomingSessions]]
-date = "4th Jul 2026"
+date = "2026-07-18"
 time = "10:00am - 12:45pm"
 
 [menu]
