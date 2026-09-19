@@ -33,7 +33,7 @@ Another option, if you don’t want to install anything, is to use an online IDE
 
 The **Mu editor** has everything you need to create great games. Try out one of these tutorials to find out more.  (*Unfortunately you can’t use these tutorials with IDLE3 or Repl.it.)*
 
-- [**Flappy Bird Pygame Zero Tutorial**](https://pygamezero-bird.readthedocs.io/) – a great first game tutorial including information on how to download and set up Mu together with Python.
+- [**Flappy Bird Pygame Zero Tutorial**](https://coderdojobrighton.github.io/python-flappy-bird/) – a great first game tutorial including information on how to download and set up Mu together with Python.
 
 - **[Burgers Pygame Zero Tutorial](https://pygamezero-burgers.readthedocs.io/en/latest/index.html)** – make a game about catching falling ingredients and building burgers.
 
