@@ -78,12 +78,6 @@ time = "10:00am - 12:45pm"
     weight = 26
 
   [[menu.main]]
-    name = "Our Github"
-    pageRef = "https://github.com/CoderDojoBrighton"
-    parent = "resources"
-    weight = 26
-
-  [[menu.main]]
     name = "Register to attend"
     pageRef = "/register-to-attend"
     weight = 30
