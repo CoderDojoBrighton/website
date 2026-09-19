@@ -41,3 +41,4 @@ Here are a few useful websites that can help you develop your coding skills and 
 
 [The Github Guide to Git](https://help.github.com/) – Git is a hugely popular version control system that helps you to work in groups and keep control of complex coding projects. Github is a site that hosts your Git repositories (or ‘repos’), and they’ve put together this handy help portal: the Bootcamp section is particularly useful for getting a Git repo setup for your project.
 
+[CoderDojo Github](https://github.com/CoderDojoBrighton) – Our Github contains our website and all the tutorials and resources we reference on our website. Feel free to suggest new things or we'll accept PR for any corrections or updates.
