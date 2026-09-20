@@ -13,5 +13,8 @@ Now follow our [workshop slides](https://docs.google.com/presentation/d/1N8RG4Zb
 
 <style
   type="text/css">
-  img[alt$="<"] { float: left; }
+  img[alt$="<"] { 
+    float: left; 
+    padding-right: 1em;
+  }
 </style>
