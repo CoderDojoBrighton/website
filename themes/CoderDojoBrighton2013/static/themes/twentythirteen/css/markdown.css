@@ -1,0 +1,12 @@
+/* Some styles to improve Markdown content */
+
+img[alt$="<"] { 
+    float: left; 
+    padding-right: 1em;
+}
+
+img[alt$=">"] { 
+    float: right; 
+    padding-left: 1em;
+}
+
